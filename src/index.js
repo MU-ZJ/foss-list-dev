@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../node_modules/bulma/css/bulma.min.css';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import BaseLayout from './components/BaseLayout';
+import Main from './components/Main';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+        <BaseLayout>
+            <Switch>
+                <Route exact path = "/" component = {Main} />
+            </Switch>
+        </BaseLayout>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
