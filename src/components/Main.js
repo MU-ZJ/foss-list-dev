@@ -1,14 +1,30 @@
+import { NavLink } from 'react-router-dom';
+
 function Main() {
     return (
         <div>
         
-            <section className="hero is-large is-link">
+            <section className="hero is-small has-text-centered">
                 
                 <div className="hero-body">
 
-                    <p className="title">Title</p>
+                    <p className="title">FOSS-List</p>
 
-                    <p className="subtitle">Subtitle</p>
+                    <p className="subtitle">A curated list of free and open source software.</p>
+
+                </div>
+
+            </section>
+
+            <section className="section">
+
+                <div className="content">
+
+                    <ul>
+                        <li>
+                            <NavLink to='/ContentTest'>ContentTest</NavLink>
+                        </li>
+                    </ul>
 
                 </div>
 

@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import BaseLayout from './components/BaseLayout';
 import Main from './components/Main';
+import NeoVim from './components/NeoVim';
+import ContentTest from './components/ContentTest';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +15,8 @@ ReactDOM.render(
         <BaseLayout>
             <Switch>
                 <Route exact path = "/" component = {Main} />
+                <Route exact path = "/NeoVim" component = {NeoVim} />
+                <Route exact path = "/ContentTest" component = {ContentTest} />
             </Switch>
         </BaseLayout>
     </BrowserRouter>
