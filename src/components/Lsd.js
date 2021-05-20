@@ -9,7 +9,7 @@ function Lsd() {
                 <div className="content has-text-centered">
 
                     <p>
-                        A Rust based <code>ls</code> extension using NerFonts and colors to improve readability and aesthetics.
+                        A Rust based <code>ls</code> extension using NerdFonts and colors to improve readability and aesthetics.
                     </p>
 
                 </div>
