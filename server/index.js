@@ -2,7 +2,7 @@ const cors = require('cors');
 
 const express = require('express');
 const app = express();
-const port = 3001
+const PORT = process.env.PORT || 3001
 
 const testdb = require('./testdb')
 
@@ -35,6 +35,6 @@ app.get('/', (req, res) => {
     res.status(200).send('Hello World');
 })
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log('live')
 })
