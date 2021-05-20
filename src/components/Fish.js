@@ -26,7 +26,7 @@ function Fish() {
 
                     <p className="title has-text-centered">Installation</p>
 
-                    <p className="title">Pre-buillt Binaries</p>
+                    <p className="title">Pre-built Binaries</p>
 
                     <p>Installers for all supported platforms can be found on the Fish website.</p>
 

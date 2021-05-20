@@ -9,7 +9,7 @@ function Comments() {
     const [comments, setComments] = useState([])
     const post = e => {
         e.preventDefault()
-        fetch("http://localhost:3001/comment", {
+        fetch("/comment", {
             method: 'POST',
             body: JSON.stringify(form),
             headers: { 'Content-Type': 'application/json' }
@@ -17,7 +17,7 @@ function Comments() {
         .then(res => res.json())
         .then((result) => {
             console.log(result)
-            fetch('http://localhost:3001/comments')
+            fetch('/comments')
             .then(response => response.json())
             .then(data => setComments(data))
         })
@@ -27,7 +27,7 @@ function Comments() {
 
     useEffect(() => {
 
-    fetch("http://localhost:3001/comments")
+    fetch("/comments")
     .then(response => response.json())
     .then(data => setComments(data))
     }, [])
