@@ -15,6 +15,8 @@ import Fish from './components/Fish';
 import VimPlug from './components/VimPlug';
 import CocNvim from './components/CocNvim';
 import ContentTest from './components/ContentTest';
+import Comments from './components/Comments';
+import CommentsDisplay from './components/CommentsDisplay';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -31,6 +33,8 @@ ReactDOM.render(
                 <Route exact path = "/VimPlug" component = {VimPlug} />
                 <Route exact path = "/CocNvim" component = {CocNvim} />
                 <Route exact path = "/ContentTest" component = {ContentTest} />
+                <Route exact path = "/Comments" component = {Comments} />
+                <Route exact path = "/CommentsDisplay" component = {CommentsDisplay} />
             </Switch>
         </BaseLayout>
     </BrowserRouter>
