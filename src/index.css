@@ -15,3 +15,8 @@ code {
 .hero {
     background-color: none;
 }
+
+#commentForm {
+    height: auto;
+    width: 25%;
+}

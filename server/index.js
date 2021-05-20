@@ -63,7 +63,7 @@ app.post('/comment', (req,res) => {
     console.log(req.body)
     testdb.createPost(req.body)
     .then(response => {
-        res.status(200).send(response);
+        res.status(200).send({success: true});
     })
     .catch(error => {
         res.status(500).send(error);
