@@ -23,7 +23,6 @@ function Main() {
                 <div className="content">
 
                     <ul>
-                        <li><NavLink to='/ContentTest'>ContentTest</NavLink></li>
                         <li><NavLink to='/NeoVim'>Neovim</NavLink></li>
                         <li><NavLink to='/Bat'>Bat</NavLink></li>
                         <li><NavLink to='/Lsd'>LSD</NavLink></li>
