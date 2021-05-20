@@ -14,7 +14,10 @@ function Comments() {
             body: JSON.stringify(form),
             headers: { 'Content-Type': 'application/json' }
         })
-        .then(res => res.json())
+        .then(res => {
+            console.log(res)
+            res.json()
+        })
         .then((result) => {
             console.log(result)
             fetch('/comments')
