@@ -9,7 +9,7 @@ function Comments() {
     const [comments, setComments] = useState([])
     const post = e => {
         e.preventDefault()
-        fetch("/comment", {
+        fetch("https://foss-list-server.herokuapp.com/comment", {
             method: 'POST',
             body: JSON.stringify(form),
             headers: { 'Content-Type': 'application/json' }
@@ -30,7 +30,7 @@ function Comments() {
 
     useEffect(() => {
 
-    fetch("/comments")
+    fetch("https://foss-list-server.herokuapp.com/comments")
     .then(response => response.json())
     .then(data => setComments(data))
     }, [])
