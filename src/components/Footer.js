@@ -4,7 +4,7 @@ function Footer() {
 
             <div className="content has-text-centered">
 
-                <p>Footer Content</p>
+                <p>Created by Zachary Murphy and Tyler G</p>
 
             </div>
 
